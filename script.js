@@ -1,10 +1,5 @@
-const getUsers = () => {
-    axios.get('https://randomuser.me/api/')
-        .then(response => {
-            console.log(response.data.results);
-        })
-        .catch(error => console.error(error));
-};
-
-
-getUsers();
+const getID = (e) => {
+    console.log(e.target.id);
+    return e.target.id;
+}
+document.querySelectorAll(".box").forEach(box => box.addEventListener("onload", getID))
