@@ -1,6 +1,5 @@
 
 const createUser = (data, item) => {
-    console.log(data)
    // item.innerHTML = data.name.first + " " + data.name.last
 };
 
